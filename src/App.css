@@ -103,22 +103,21 @@ img:hover {
 
 .container1 {
   margin:20px;
-  display: grid;
-  grid-template-columns: 200px 150px 20%;
-  /* grid-template-rows: 200px 150px; */
-
-  background: teal;
+  display:grid;
+ 
 }
-
-/* .header{
- grid-column-start: 1;
- grid-row-end: 3;
-} */
-
-
-/* 
 .sidebar{
   
-  background: teal;
-  grid-row-start: 2/auto;
-} */
+  background:green;
+  
+}
+.header1{
+  background:red
+
+}
+.footer{
+  background: yellow;
+}
+.main{
+  background: blue;
+}

@@ -7,11 +7,8 @@ export default class Hello extends Component {
     
         <div className="container">
           
-            <div className="header">
-              
-            <h1>Welcome </h1>
-             
-            </div>
+            <div className="header1">Welcome</div>
+
             <div className="sidebar">sidebar</div>
             <div className="main">main</div>
             <div className="footer">footer</div>
