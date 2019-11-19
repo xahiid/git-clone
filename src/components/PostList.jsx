@@ -135,11 +135,11 @@ export default class PostList extends Component {
                        <h1>Welcome To demo Project</h1>
                       
                          {post.map(post => (
-                             
+                              
                            <div className='container' key={post.id}>
                            <div className='imgdiv'>  <img src={post.avatar_url} /></div>
                            
-                            
+                            <div></div>
                            </div>
                          ))}
                     
