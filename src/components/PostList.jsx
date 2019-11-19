@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
-import axios from 'axios'
+// import axios from 'axios'
+import {BrowserRouter as Router, Link ,Route,Switch} from 'react-router-dom'
+import Navbar from "./NavBar"
+import Hello from './Hello'
+
+
+
 export default class PostList extends Component {
-                 state = {
+  constructor(props){
+    super(props)
+  
+                this.state = {
                    post: [
                      {
                        login: "mojombo",
@@ -126,24 +135,32 @@ export default class PostList extends Component {
                 //      this.setState({ post: response.data });
                 //    });
                 //  }
-                 render() {
+
+  }
+                     render() {
                    const { post } = this.state;
-                   console.log(post);
+                     
 
                    return (
-                     <div>
-                       <h1>Welcome To demo Project</h1>
-                      
-                         {post.map(post => (
-                              
-                           <div className='container' key={post.id}>
-                           <div className='imgdiv'>  <img src={post.avatar_url} /></div>
+                     <Router>
+                       <div>
+                         <Navbar post={post} />
+
+                         <div className="container">
+                           {post.map(post => (
+                             <div className="" key={post.id}>
+                               <Link to="/welcome">
+                                 {" "}
+                                 <img src={post.avatar_url} />
+                               </Link>
+                               <hr />
+                               <div className="Name">{post.login}</div>
+                             </div>
+                           ))}
                            
-                            <div></div>
-                           </div>
-                         ))}
-                    
-                     </div>
+                         </div>
+                       </div>
+                     </Router>
                    );
                  }
                }
