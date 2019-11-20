@@ -18,6 +18,7 @@ handleCh=()=>{
 }
   render() {
     return (
+<<<<<<< HEAD
       <div className="container1">
         <div className="header">
           <NavBar />
@@ -43,6 +44,19 @@ handleCh=()=>{
         <div className="main"><Main/></div>
         <div className="footer"><Footer/></div>
       </div>
+=======
+    
+        <div className="container1">
+          
+            <div className="header1">Welcome</div>
+
+            <div className="sidebar">sidebar</div>
+            <div className="main">main</div>
+            <div className="footer">footer</div>
+          
+
+     </div>
+>>>>>>> d76eccbc5ba5e48f6ec30e50ef01b2ee1605ecb2
     );
   }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html{
   margin:'0px';
   padding: '0px';
@@ -8,6 +9,10 @@ body{
   padding: '0px';
   box-sizing: border-box;
 }
+=======
+
+
+>>>>>>> d76eccbc5ba5e48f6ec30e50ef01b2ee1605ecb2
 .container {
   box-sizing: border-box;
   /* max-width: 1100px; */
@@ -169,7 +174,26 @@ img:hover {
   display: inline;
   margin-left: 40px;
   font-size: 14px;
+  margin:20px;
+  display:grid;
+ grid-template-columns:200px 200px 200px 1fr;
+ grid-template-rows: 100px 100px 100px;
 }
+.sidebar{
+  
+  background:green;
+  grid-row-start: 2;
+  grid-row-end:4;
+  height:500px;
+
+ 
+
+  
+}
+.header1{
+  background:red;
+  grid-column-start: 1;
+  grid-column-end:5;
 
 .column {
   width: 391px;
